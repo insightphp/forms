@@ -1,0 +1,39 @@
+{
+    "name": "@insightphp/forms",
+    "version": "0.1.0",
+    "description": "Forms component of Insight.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/insightphp/insight.git"
+    },
+    "private": false,
+    "keywords": [
+        "Insight",
+        "Laravel",
+        "admin",
+        "adminpanel"
+    ],
+    "author": "Peter Stovka <peter@peterstovka.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/insightphp/insight/issues"
+    },
+    "homepage": "https://github.com/insightphp/insight#readme",
+    "main": "./dist/forms.umd.js",
+    "module": "./dist/forms.es.js",
+    "files": [
+        "dist",
+        "resources/js"
+    ],
+    "types": "./dist/types/main.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/forms.es.js",
+            "require": "./dist/forms.umd.js"
+        }
+    },
+    "dependencies": {
+        "vue": "^3.2",
+        "@insightphp/inertia-view-components": "^0.1"
+    }
+}
